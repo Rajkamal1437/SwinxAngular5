@@ -12,12 +12,28 @@ import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { SuppliersListComponent } from '../../suppliers-list/suppliers-list.component';
+import { ToApproveComponent } from '../../to-approve/to-approve.component';
+import { SentinvoiceComponent } from '../../sentinvoice/sentinvoice.component';
+import { ParkedComponent } from '../../parked/parked.component';
+import { NotregisteredComponent } from '../../notregistered/notregistered.component';
+import { ImportedComponent } from '../../imported/imported.component';
+import { DistributedComponent } from '../../distributed/distributed.component';
+import { CountersignedComponent } from '../../countersigned/countersigned.component';
+import { AllinvoicesComponent } from '../../allinvoices/allinvoices.component';
+import { ProjectsComponent } from '../../projects/projects.component';
+import { CostcentersComponent } from '../../costcenters/costcenters.component';
+import { AccountsComponent } from '../../accounts/accounts.component';
+import { PropertiesComponent } from '../../properties/properties.component';
+import { CompanyComponent } from '../../company/company.component';
+import { UserComponent } from '../../user/user.component';
+import { CreatetemplateComponent } from '../../createtemplate/createtemplate.component';
 
 import {
   MatButtonModule,
   MatInputModule,
   MatRippleModule,
   MatTooltipModule,
+  MatGridListModule
 } from '@angular/material';
 @NgModule({
   imports: [
@@ -38,7 +54,22 @@ import {
     MapsComponent,
     NotificationsComponent,
     UpgradeComponent,
-    SuppliersListComponent
+    SuppliersListComponent,
+    ToApproveComponent,
+    SentinvoiceComponent,
+    ParkedComponent,
+    NotregisteredComponent,
+    ImportedComponent,
+    DistributedComponent,
+    CountersignedComponent,
+    AllinvoicesComponent,
+    ProjectsComponent,
+    CostcentersComponent,
+    AccountsComponent,
+    PropertiesComponent,
+    CompanyComponent,
+    UserComponent,
+    CreatetemplateComponent,
   ]
 })
 

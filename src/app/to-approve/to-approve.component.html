@@ -1,0 +1,149 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container-fluid">
+  <div class="rows" style="display:inline-flex;">
+    <div class="col-md-6 col-lg-6 col-sm-12" style="background:#fff;">
+      <form class="example-form">
+  <!-- <mat-form-field class="example-full-width">
+    <input matInput placeholder="Company (disabled)" disabled value="Google">
+  </mat-form-field>
+
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width">
+      <input matInput placeholder="First name">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <input matInput placeholder="Long Last Name That Will Be Truncated">
+    </mat-form-field></td>
+  </tr></table> -->
+
+
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width">
+      <input matInput placeholder="Type" value="Debit Invoice">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <input matInput placeholder="Serial No" value="15345">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <input matInput #postalCode maxlength="5" placeholder="Status" value="Registrerad">
+  </mat-form-field></td>
+
+  </tr>
+  <tr>
+    <td><mat-form-field class="example-full-width">
+      <input matInput placeholder="Supplier" value="18">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <input matInput placeholder="Supplier Name" value="Swinx AB">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <input matInput #postalCode maxlength="5" placeholder="invoice Amount(SEK)" value="5,000.00">
+    </mat-form-field></td>
+
+  </tr>
+  <tr>
+    <td><mat-form-field class="example-full-width">
+      <input matInput placeholder="Invoice Date" value="2018/05/08">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <input matInput placeholder="Approver" value="CS;PER;ANRO;CS;PER;ANRO;CS;PER;ANRO;">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <input matInput #postalCode maxlength="5" placeholder="Certifier" value="SA;RAJ;">
+      <!-- <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint> -->
+    </mat-form-field></td>
+
+  </tr>
+</table>
+<button mat-raised-button color="primary">View Details</button>
+<button mat-raised-button color="primary" style="margin-left:20px;">Approve</button>
+</form>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead class=" text-primary" style="border-bottom:1px solid #000; background-color: #3f51b5; color:#fff !important;">
+            <th>
+              Account
+            </th>
+            <th>
+              Info
+            </th>
+            <th>
+                Amount
+            </th>
+            <th>
+                project
+            </th>
+            <th>
+                costcenter
+            </th>
+            <th>
+                Debit
+            </th>
+            <th>
+                Credit
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    1002
+                </td>
+                <td>
+                    Swinx Cap Accounts
+                </td>
+                <td>
+                    100.00
+                </td>
+                <td>
+                    OFS
+                </td>
+                <td >
+                    VK
+                </td>
+                <td >
+                    100.00
+                </td>
+                <td >
+                    0.00
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    1010
+                </td>
+                <td>
+                    OFS Cap Accounts
+                </td>
+                <td>
+                    1040.00
+                </td>
+                <td>
+                    SWINX
+                </td>
+                <td >
+                    Google
+                </td>
+                <td >
+                    1030.00
+                </td>
+                <td >
+                    10.00
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+    </div>
+
+    <div class="col-md-5 col-lg-5 col-sm-12" style="background:#fff; margin-left:40px;" >
+        <img src="/assets/img/invoice.jpg"/>
+    </div>
+  </div>
+</div>

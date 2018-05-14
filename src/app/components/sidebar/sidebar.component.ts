@@ -7,9 +7,15 @@ declare interface RouteInfo {
     icon: string;
     class: string;
     droparrow : boolean;
-    dropdown: [ path: string, title: string, icon: string, class: string;  ]
-}
-export const ROUTES: RouteInfo[] = [
+    dropdown: dropdownarray[];
+};
+declare interface dropdownarray {
+  path: string;
+  title: string;
+  icon: string;
+  class: string;
+};
+export const ROUTES : any[] = [
   // { path: '/dashboard', title: 'Dashboard',  icon: 'dashboard', class: '' },
   //  { path: '/user-profile', title: 'User Profile',  icon:'person', class: '' },
   //  { path: '/table-list', title: 'Table List',  icon:'content_paste', class: '' },
@@ -18,32 +24,32 @@ export const ROUTES: RouteInfo[] = [
   //  { path: '/maps', title: 'Maps',  icon:'location_on', class: '' },
   //  { path: '/notifications', title: 'Notifications',  icon:'notifications', class: '' },
   //  { path: '/upgrade', title: 'Upgrade to PRO',  icon:'unarchive', class: 'active-pro' },
-    // { path: '/dashboard', title: 'Dashboard',  icon: 'dashboard', class: '' },
+  //   { path: '/dashboard', title: 'Dashboard',  icon: 'dashboard', class: '' },
 
-    { path: '/approve', title: 'To Approve',  icon:'content_paste', class: '' },
-    { path: '/Sent', title: 'Sent Invoice',  icon:'send', class: '1',droparrow: true,
+    { path: '/toapprove', title: 'To Approve',  icon:'content_paste', class: '' },
+    { path: '/sentinvoice', title: 'Sent Invoice',  icon:'send', class: '1', droparrow: true,
       dropdown:
       [
         { path: '/SentProjects', title: 'Projects',  icon:'P', class: '' },
         { path: '/SentCostcenters', title: 'CostCenters',  icon:'monetization_on', class: '' }
       ]
     },
-    { path: '/Parked', title: 'Parked',  icon:'bubble_chart', class: '' },
+    { path: '/parked', title: 'Parked',  icon:'bubble_chart', class: '' },
     { path: '/flow', title: 'Invoice Flow',  icon:'description', class: '',droparrow: true,
     dropdown:
     [
-      { path: '/NotRegistered', title: 'NotRegistered',  icon:'no_sim', class: '' },
-      { path: '/Imported', title: 'Imported',  icon:'get_app', class: '' },
-      { path: '/Distributed', title: 'Distributed',  icon:'share', class: '' },
-      { path: '/Countersigned', title: 'Counter Signed',  icon:'verified_user', class: '' }
+      { path: '/notregistered', title: 'NotRegistered',  icon:'no_sim', class: '' },
+      { path: '/imported', title: 'Imported',  icon:'get_app', class: '' },
+      { path: '/distributed', title: 'Distributed',  icon:'share', class: '' },
+      { path: '/countersigned', title: 'Counter Signed',  icon:'verified_user', class: '' }
     ]
     },
-    { path: '/All Invoices', title: 'All Invoices',  icon:'library_books', class: '1',droparrow: true,
+    { path: '/allinvoices', title: 'All Invoices',  icon:'library_books', class: '1',droparrow: true,
     dropdown:
     [
-      { path: '/Projects', title: 'Projects',  icon:'P', class: '' },
-      { path: '/Costcenters', title: 'CostCenters',  icon:'monetization_on', class: '' },
-      { path: '/Accounts', title: 'Accounts',  icon:'send', class: '' }
+      { path: '/projects', title: 'Projects',  icon:'P', class: '' },
+      { path: '/costcenters', title: 'CostCenters',  icon:'monetization_on', class: '' },
+      { path: '/accounts', title: 'Accounts',  icon:'account_balance_wallet', class: '' }
     ]
     },
     { path: '/suppliersList', title: 'Suppliers List',  icon:'list', class: '' },
@@ -58,7 +64,14 @@ export const ROUTES: RouteInfo[] = [
       { path: '/MergeInvoice', title: 'Merge Invoice',  icon:'merge_type', class: '' },
       { path: '/ExcelExport', title: 'Excel Export',  icon:'explicit', class: '' }
     ] },
-    { path: '/Settings', title: 'Settings',  icon:'settings', class: '' },
+    { path: '/Settings', title: 'Settings',  icon:'settings', class: '',droparrow:true,
+    dropdown:[
+      { path: '/properties', title: 'properties',  icon:'settings_input_component', class: '' },
+      { path: '/company', title: 'company',  icon:'card_travel', class: '' },
+      { path: '/user',title: 'users',  icon:'supervised_user_circle', class: '' },
+      { path: '/createtemplate',title: 'Create Template',  icon:'local_hospital', class: '' },
+    ]
+   },
 ];
 @Component({
   selector: 'app-sidebar',
