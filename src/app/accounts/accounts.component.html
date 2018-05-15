@@ -1,3 +1,116 @@
-<p>
-  accounts works!
-</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="container" style="background:#fff;">
+  <div class="table-responsive">
+    <p style="margin-top:20px;font-weight:700;"> Accounts - List </p>
+
+      <form class="navbar-form">
+          <div class="input-group no-border justify-content-end">
+            <input type="text"  class="form-control" placeholder="Enter To search Accounts" style="max-width:200px; width:200px; margin-top:-5px;">
+            <button mat-raised-button type="submit" class="btn btn-blue btn-round btn-just-icon" style="margin-top:-5px;">
+                  <i class="material-icons">search</i>
+                  <div class="ripple-container"></div>
+              </button>
+          </div>
+      </form>
+
+      <table class="table">
+          <thead class=" text-primary" style="color: #fff !important; background-color: #2e348a;">
+              <th>
+                Favorites
+              </th>
+              <th>
+                  Account
+              </th>
+              <th>
+                  Account Name
+              </th>
+          </thead>
+          <tbody>
+              <tr>
+                <td (click)="clicked = !clicked">
+                  <i color="primary" class="material-icons">{{!clicked ? 'star' : 'star_border'}}</i>
+                  </td>
+                  <td>
+                    1001
+                  </td>
+                  <td class="text-primary">
+                      IOB Accounts
+                  </td>
+              </tr>
+              <tr>
+                <td (click)="clicked1 = !clicked1">
+                  <i color="primary" class="material-icons">{{!clicked1 ? 'star' : 'star_border'}}</i>
+                  </td>
+                  <td>
+                    1002
+                  </td>
+                  <td class="text-primary">
+                      TMB Accounts
+                  </td>
+              </tr>
+              <tr>
+                <td (click)="clicked2 = !clicked2">
+                  <i color="primary" class="material-icons">{{!clicked2 ? 'star' : 'star_border'}}</i>
+                  </td>
+                  <td>
+                    1003
+                  </td>
+                  <td class="text-primary">
+                      DBS Accounts
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                    <i color="primary" class="material-icons">star</i>
+                  </td>
+                  <td>
+                    1004
+                  </td>
+                  <td class="text-primary">
+                      SBI Accounts
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                    <i color="primary" class="material-icons">star_border</i>
+                  </td>
+                  <td>
+                    1005
+                  </td>
+                  <td class="text-primary">
+                      UBI Accounts
+                  </td>
+              </tr>
+              <tr>
+                  <td (click)="clicked = !clicked">
+                    <i color="primary" class="material-icons">{{!clicked ? 'star' : 'star_border'}}</i>
+                  </td>
+                  <td>
+                    1006
+                  </td>
+                  <td class="text-primary">
+                      GIT Accounts
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                    <i color="primary" class="material-icons">star_border</i>
+                  </td>
+                  <td>
+                    1007
+                  </td>
+                  <td class="text-primary">
+                      REDHAT Accounts
+                  </td>
+              </tr>
+
+          </tbody>
+      </table>
+  </div>
+</div>

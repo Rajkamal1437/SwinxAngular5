@@ -5,29 +5,19 @@
 <br>
 
 <div class="container-fluid">
-  <div class="rows" style="display:inline-flex;">
-    <div class="col-md-6 col-lg-6 col-sm-12" style="background:#fff;">
-      <form class="example-form">
-  <!-- <mat-form-field class="example-full-width">
-    <input matInput placeholder="Company (disabled)" disabled value="Google">
-  </mat-form-field>
-
-  <table class="example-full-width" cellspacing="0"><tr>
-    <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="First name">
-    </mat-form-field></td>
-    <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="Long Last Name That Will Be Truncated">
-    </mat-form-field></td>
-  </tr></table> -->
 
 
-  <table class="example-full-width" cellspacing="0"><tr>
-    <td><mat-form-field class="example-full-width">
+
+  <div class="row">
+    <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12" style="background:#fff;">
+  <form class="example-form">
+    <div  class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+  <table class="example-full-width" cellspacing="0" class="col-md-6 col-lg-6 col-sm-12 col-xs-6"><tr>
+    <td><mat-form-field class="example-full-width" >
       <input matInput placeholder="Type" value="Debit Invoice">
     </mat-form-field></td>
     <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="Serial No" value="15345">
+      <input matInput placeholder="Serial No" value="15345" >
     </mat-form-field></td>
     <td><mat-form-field class="example-full-width">
       <input matInput #postalCode maxlength="5" placeholder="Status" value="Registrerad">
@@ -47,14 +37,18 @@
 
   </tr>
   <tr>
+    <td>
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="Invoice due date " [value]="date.value">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </td>
     <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="Invoice Date" value="2018/05/08">
+      <input matInput placeholder="Approver" value="CS;PER;ANRO;CS;PER;ANRO;CS;PER;ANRO;" >
     </mat-form-field></td>
     <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="Approver" value="CS;PER;ANRO;CS;PER;ANRO;CS;PER;ANRO;">
-    </mat-form-field></td>
-    <td><mat-form-field class="example-full-width">
-      <input matInput #postalCode maxlength="5" placeholder="Certifier" value="SA;RAJ;">
+      <input matInput #postalCode maxlength="5" placeholder="Certifier" value="SA;RAJ;" >
       <!-- <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint> -->
     </mat-form-field></td>
 
@@ -62,87 +56,127 @@
 </table>
 <button mat-raised-button color="primary">View Details</button>
 <button mat-raised-button color="primary" style="margin-left:20px;">Approve</button>
+</div>
 </form>
+<div class="table">
+  <div class="tr th" style="color:#fff; background-color:#2e348a;">
+    <div class="td">
+      Acc
+    </div>
+    <div class="td"   style="flex-grow: 2;">
+    Info
+    </div>
+    <div class="td">
+        Amt
+    </div>
+    <div class="td">
+      project
+    </div>
+    <div class="td" style="flex-grow: 2;">
+    cost center
+    </div>
+    <div class="td">
+      Debit
+    </div>
+    <div class="td">
+      Credit
+    </div>
+  </div>
 
-<div class="table-responsive">
-    <table class="table">
-        <thead class=" text-primary" style="border-bottom:1px solid #000; background-color: #3f51b5; color:#fff !important;">
-            <th>
-              Account
-            </th>
-            <th>
-              Info
-            </th>
-            <th>
-                Amount
-            </th>
-            <th>
-                project
-            </th>
-            <th>
-                costcenter
-            </th>
-            <th>
-                Debit
-            </th>
-            <th>
-                Credit
-            </th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    1002
-                </td>
-                <td>
-                    Swinx Cap Accounts
-                </td>
-                <td>
-                    100.00
-                </td>
-                <td>
-                    OFS
-                </td>
-                <td >
-                    VK
-                </td>
-                <td >
-                    100.00
-                </td>
-                <td >
-                    0.00
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    1010
-                </td>
-                <td>
-                    OFS Cap Accounts
-                </td>
-                <td>
-                    1040.00
-                </td>
-                <td>
-                    SWINX
-                </td>
-                <td >
-                    Google
-                </td>
-                <td >
-                    1030.00
-                </td>
-                <td >
-                    10.00
-                </td>
-            </tr>
+  <div class="tr">
+    <div class="td" style="justify-content: flex-end;">
+      <span>1002</span>
+    </div>
+    <div class="td"
+      style="flex-grow: 2; justify-content: center;">
+      <span>  Swinx Cap Accounts</span>
+    </div>
+    <div class="td"
+      style="justify-content: center;">
+      <span>  10000.00</span>
+    </div>
+    <div class="td"
+      style="justify-content: center;">
+      <span>  OFS</span>
+    </div>
+    <div class="td"
+      style="justify-content: flex-end;" style="flex-grow: 2;">
+      <span>  VK</span>
+    </div>
+    <div class="td"
+      style="justify-content: flex-end;">
+      <span>  100.00</span>
+    </div>
+    <div class="td"
+      style="justify-content: flex-end;">
+      <span>  0.00</span>
+    </div>
+  </div>
+  <div class="tr">
+    <div class="td"
+      style="justify-content: flex-end;">
+      <span>1023</span>
+    </div>
+    <div class="td"
+      style=" flex-grow: 2; justify-content: center;">
+      <span>  Google Accounts</span>
+    </div>
+    <div class="td"
+      style="justify-content: center;">
+      <span>  1500.00</span>
+    </div>
+    <div class="td"
+      style="justify-content: center;">
+      <span>  SWINX</span>
+    </div>
+    <div class="td"
+      style="justify-content: flex-end;" style="flex-grow: 2;">
+      <span>  OFS</span>
+    </div>
+    <div class="td"
+      style="justify-content: flex-end;">
+      <span>  2000.00</span>
+    </div>
+    <div class="td"
+      style="justify-content: flex-end;">
+      <span>  500.00</span>
+    </div>
+  </div>
 
-        </tbody>
-    </table>
+  <div class="tr">
+    <div class="td"
+      style="justify-content: flex-end;">
+      <span>1300</span>
+    </div>
+    <div class="td"
+      style=" flex-grow: 2; justify-content: center;">
+      <span>Microsoft Billing</span>
+    </div>
+    <div class="td"
+      style="justify-content: center;">
+      <span>  1500.00</span>
+    </div>
+    <div class="td"
+      style="justify-content: center;">
+      <span>  IOS</span>
+    </div>
+    <div class="td"
+      style="justify-content: flex-end;" style="flex-grow: 2;">
+      <span>  OFS</span>
+    </div>
+    <div class="td"
+      style="justify-content: flex-end;">
+      <span>  1500.00</span>
+    </div>
+    <div class="td"
+      style="justify-content: flex-end;">
+      <span>  0.00</span>
+    </div>
+  </div>
 </div>
     </div>
 
-    <div class="col-md-5 col-lg-5 col-sm-12" style="background:#fff; margin-left:40px;" >
+    <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12" style="background:#fff;" >
         <img src="/assets/img/invoice.jpg"/>
     </div>
   </div>

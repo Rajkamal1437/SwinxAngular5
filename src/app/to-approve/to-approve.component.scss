@@ -1,40 +1,86 @@
-.example-form {
-  margin-top: 60px !important;
-  min-width: 450px !important;
-  max-width: 700px !important;
+.mat-form-field-label-wrapper {
+    font-size: 15px;
+    color:#2e348a  !important;
+}
+
+.table {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0.5rem;
+  line-height: 1.5;
+  border-bottom: 1px solid #d0d0d0;
+  flex: 1 1 auto;
+}
+
+.th {
+  display: flex;
   width: 100%;
+  font-weight: 500;
+  background-color: #f2f2f2;
+
+}
+
+.th > .td {
+  white-space: normal;
+  justify-content: center;
+}
+
+.tr {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+// .tr:nth-of-type(even) {
+//   background-color: #f2f2f2;
+// }
+//
+// .tr:nth-of-type(odd) {
+//   background-color: #ffffff;
+// }
+
+.td {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 1em;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0px;
+  white-space: nowrap;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.th[_ngcontent-c5] {
+    display: flex;
+    width: 100%;
+    font-weight: 300;
+    background-color: #f2f2f2;
+}
+
+.td[_ngcontent-c5] {
+  padding: 1em;
+}
+
+.table[_ngcontent-c5]{
+  border: 1px solid #efefefed;
 }
 
 .mat-form-field{
   margin: 10px !important;
 }
 
-
 @media (min-width: 992px){
-.col-lg-6 , .col-md-6{
-    flex: 0 0 50%;
-    max-width: 60%;
-
+.col-lg-4 {
+    margin-left: 25px;
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
 }
-
-
-.col-lg-5 , .col-md-5{
-    flex: 0 0 40%;
-    max-width: 40%;
-    margin-left: 40px !important;
-}
-}
-
-
-@media (max-width: 600px){
-.col-lg-6 , .col-md-6{
-    flex: 0 0 100%;
-    max-width: 100%;
-
-}
-
-.col-lg-5 , .col-md-5{
-    flex: 0 0 100%;
-    max-width: 100%;
+.col-lg-7 {
+  margin-left: 30px;
+    flex: 0 0 58.33333333%;
+    max-width: 58.33333333%;
 }
 }

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {FormControl} from '@angular/forms';
 import { AdminLayoutRoutes } from './admin-layout.routing';
 import { DashboardComponent } from '../../dashboard/dashboard.component';
 import { UserProfileComponent } from '../../user-profile/user-profile.component';
@@ -33,8 +34,18 @@ import {
   MatInputModule,
   MatRippleModule,
   MatTooltipModule,
-  MatGridListModule
+  MatGridListModule,
+  MatCheckboxModule,
+  MatPaginatorModule,
+  MatDatepickerModule,
+  MatNativeDateModule,
+  MatIconModule,
+  MatCardModule,
+  MatTooltipModule
 } from '@angular/material';
+
+
+
 @NgModule({
   imports: [
     CommonModule,
@@ -44,6 +55,16 @@ import {
     MatRippleModule,
     MatInputModule,
     MatTooltipModule,
+    MatCheckboxModule,
+    MatGridListModule,
+    MatPaginatorModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatIconModule,
+    MatCardModule,
+    MatTooltipModule
+
+
   ],
   declarations: [
     DashboardComponent,
