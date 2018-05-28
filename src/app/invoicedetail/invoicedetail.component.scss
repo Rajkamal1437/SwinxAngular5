@@ -1,0 +1,173 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+.mat-form-field-label-wrapper {
+    font-size: 15px;
+    color:#2e348a  !important;
+}
+
+.table {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0.5rem;
+  line-height: 1.5;
+  border-bottom: 1px solid #d0d0d0;
+  flex: 1 1 auto;
+}
+
+.th {
+  display: flex;
+  width: 100%;
+  font-weight: 500;
+  background-color: #f2f2f2;
+
+}
+
+.th > .td {
+  white-space: normal;
+  justify-content: center;
+}
+
+.tr {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+// .tr:nth-of-type(even) {
+//   background-color: #f2f2f2;
+// }
+//
+// .tr:nth-of-type(odd) {
+//   background-color: #ffffff;
+// }
+
+.td {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 1em;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0px;
+  white-space: nowrap;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.th[_ngcontent-c5] {
+    display: flex;
+    width: 100%;
+    font-weight: 300;
+    background-color: #f2f2f2;
+}
+
+.td[_ngcontent-c5] {
+  padding: 1em;
+}
+
+
+.table[_ngcontent-c5]{
+  font-size: 13px !important;
+  border: 1px solid #efefefed;
+}
+input.mat-input-element {
+    font-size: 14px !important;
+    margin-top: -.0625em;
+}
+
+
+.mat-form-field{
+  margin: 3px !important;
+}
+
+.table[_ngcontent-c5][_ngcontent-c5] {
+    border: 1px solid #efefefed;
+    width: 95%;
+}
+
+@media (min-width: 992px){
+.col-lg-4 {
+    margin-left: 25px;
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
+}
+.col-lg-7 {
+  margin-left: 30px;
+    flex: 0 0 58.33333333%;
+    max-width: 58.33333333%;
+}
+}
+
+
+
+.item {
+    position: relative;
+    margin: 20px;
+    border-left: 3px dashed #2e348a;
+    padding: 10px 40px;
+}
+
+.item > span {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 100%;
+    left: -20px;
+    top: 0;
+    color: #fff;
+    background: #2e348a;
+}
+
+.item div {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item p {
+    margin-top: 15px;
+}
+
+mat-tooltip {
+  font-size: 20px;
+    color: #fff;
+    background: #000;
+    border-radius: 2px;
+    margin: 14px;
+    max-width: 250px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+::ng-deep .mat-tooltip {
+  font-size: 16px;
+    color: #3f51b5;
+    border-radius: 2px;
+    margin: 14px;
+    max-width: 200px;
+    padding-left: 5px;
+    padding-right: 5px;
+   }

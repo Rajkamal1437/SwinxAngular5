@@ -45,7 +45,7 @@
               </tr>
               <tr>
                 <td (click)="clicked1 = !clicked1">
-                  <i color="primary" class="material-icons">{{!clicked1 ? 'star' : 'star_border'}}</i>
+                  <i color="primary" class="material-icons">{{clicked1 ? 'star' : 'star_border'}}</i>
                   </td>
                   <td>
                     1002
@@ -66,8 +66,8 @@
                   </td>
               </tr>
               <tr>
-                  <td>
-                    <i color="primary" class="material-icons">star</i>
+                  <td (click)="clicked3 = !clicked3">
+                    <i color="primary" class="material-icons">{{clicked3 ? 'star' : 'star_border'}}</i>
                   </td>
                   <td>
                     1004
@@ -77,8 +77,8 @@
                   </td>
               </tr>
               <tr>
-                  <td>
-                    <i color="primary" class="material-icons">star_border</i>
+                  <td (click)="clicked4 = !clicked4">
+                    <i color="primary" class="material-icons">{{!clicked4 ? 'star' : 'star_border'}}</i>
                   </td>
                   <td>
                     1005
@@ -88,8 +88,8 @@
                   </td>
               </tr>
               <tr>
-                  <td (click)="clicked = !clicked">
-                    <i color="primary" class="material-icons">{{!clicked ? 'star' : 'star_border'}}</i>
+                  <td (click)="clicked5 = !clicked5">
+                    <i color="primary" class="material-icons">{{!clicked5 ? 'star' : 'star_border'}}</i>
                   </td>
                   <td>
                     1006
@@ -99,8 +99,8 @@
                   </td>
               </tr>
               <tr>
-                  <td>
-                    <i color="primary" class="material-icons">star_border</i>
+                  <td (click)="clicked6 = !clicked6">
+                    <i color="primary" class="material-icons">{{clicked6 ? 'star' : 'star_border'}}</i>
                   </td>
                   <td>
                     1007

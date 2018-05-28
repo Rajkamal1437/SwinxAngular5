@@ -4,14 +4,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {FormControl} from '@angular/forms';
 import { AdminLayoutRoutes } from './admin-layout.routing';
-import { DashboardComponent } from '../../dashboard/dashboard.component';
-import { UserProfileComponent } from '../../user-profile/user-profile.component';
-import { TableListComponent } from '../../table-list/table-list.component';
-import { TypographyComponent } from '../../typography/typography.component';
-import { IconsComponent } from '../../icons/icons.component';
-import { MapsComponent } from '../../maps/maps.component';
-import { NotificationsComponent } from '../../notifications/notifications.component';
-import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { SuppliersListComponent } from '../../suppliers-list/suppliers-list.component';
 import { ToApproveComponent } from '../../to-approve/to-approve.component';
 import { SentinvoiceComponent } from '../../sentinvoice/sentinvoice.component';
@@ -28,21 +20,43 @@ import { PropertiesComponent } from '../../properties/properties.component';
 import { CompanyComponent } from '../../company/company.component';
 import { UserComponent } from '../../user/user.component';
 import { CreatetemplateComponent } from '../../createtemplate/createtemplate.component';
-
+import { InvoicedetailComponent } from '../../invoicedetail/invoicedetail.component';
+import { invoicedetailpopup } from '../../invoicedetail/invoicedetail.component';
 import {
-  MatButtonModule,
-  MatInputModule,
-  MatRippleModule,
-  MatTooltipModule,
-  MatGridListModule,
-  MatCheckboxModule,
-  MatPaginatorModule,
-  MatDatepickerModule,
-  MatNativeDateModule,
-  MatIconModule,
-  MatCardModule,
-  MatTooltipModule
+  MatAutocompleteModule,
+   MatButtonModule,
+   MatButtonToggleModule,
+   MatCardModule,
+   MatCheckboxModule,
+   MatChipsModule,
+   MatDatepickerModule,
+   MatDialogModule,
+   MatDividerModule,
+   MatExpansionModule,
+   MatGridListModule,
+   MatIconModule,
+   MatInputModule,
+   MatListModule,
+   MatMenuModule,
+   MatNativeDateModule,
+   MatPaginatorModule,
+   MatProgressBarModule,
+   MatProgressSpinnerModule,
+   MatRadioModule,
+   MatRippleModule,
+   MatSelectModule,
+   MatSidenavModule,
+   MatSliderModule,
+   MatSlideToggleModule,
+   MatSnackBarModule,
+   MatSortModule,
+   MatStepperModule,
+   MatTableModule,
+   MatTabsModule,
+   MatToolbarModule,
+   MatTooltipModule,
 } from '@angular/material';
+
 
 
 
@@ -51,30 +65,41 @@ import {
     CommonModule,
     RouterModule.forChild(AdminLayoutRoutes),
     FormsModule,
-    MatButtonModule,
-    MatRippleModule,
-    MatInputModule,
-    MatTooltipModule,
-    MatCheckboxModule,
-    MatGridListModule,
-    MatPaginatorModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatIconModule,
-    MatCardModule,
-    MatTooltipModule
-
-
+    MatAutocompleteModule,
+     MatButtonModule,
+     MatButtonToggleModule,
+     MatCardModule,
+     MatCheckboxModule,
+     MatChipsModule,
+     MatDatepickerModule,
+     MatDialogModule,
+     MatDividerModule,
+     MatExpansionModule,
+     MatGridListModule,
+     MatIconModule,
+     MatInputModule,
+     MatListModule,
+     MatMenuModule,
+     MatNativeDateModule,
+     MatPaginatorModule,
+     MatProgressBarModule,
+     MatProgressSpinnerModule,
+     MatRadioModule,
+     MatRippleModule,
+     MatSelectModule,
+     MatSidenavModule,
+     MatSliderModule,
+     MatSlideToggleModule,
+     MatSnackBarModule,
+     MatSortModule,
+     MatStepperModule,
+     MatTableModule,
+     MatTabsModule,
+     MatToolbarModule,
+     MatTooltipModule,
   ],
+    entryComponents: [invoicedetailpopup],
   declarations: [
-    DashboardComponent,
-    UserProfileComponent,
-    TableListComponent,
-    TypographyComponent,
-    IconsComponent,
-    MapsComponent,
-    NotificationsComponent,
-    UpgradeComponent,
     SuppliersListComponent,
     ToApproveComponent,
     SentinvoiceComponent,
@@ -91,6 +116,8 @@ import {
     CompanyComponent,
     UserComponent,
     CreatetemplateComponent,
+    InvoicedetailComponent,
+    invoicedetailpopup
   ]
 })
 

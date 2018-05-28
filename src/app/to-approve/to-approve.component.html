@@ -45,7 +45,7 @@
     </mat-form-field>
   </td>
     <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="Approver" value="CS;PER;ANRO;CS;PER;ANRO;CS;PER;ANRO;" >
+      <input matInput placeholder="Approver" value="CS;PER;ANRO;" >
     </mat-form-field></td>
     <td><mat-form-field class="example-full-width">
       <input matInput #postalCode maxlength="5" placeholder="Certifier" value="SA;RAJ;" >
@@ -54,11 +54,11 @@
 
   </tr>
 </table>
-<button mat-raised-button color="primary">View Details</button>
+<button mat-raised-button color="primary" routerLinkActive="active" [routerLink]="['/invoicedetail']" >View Details</button>
 <button mat-raised-button color="primary" style="margin-left:20px;">Approve</button>
 </div>
 </form>
-<div class="table">
+<div class="table" style="font-size: 14px !important;">
   <div class="tr th" style="color:#fff; background-color:#2e348a;">
     <div class="td">
       Acc
@@ -72,8 +72,8 @@
     <div class="td">
       project
     </div>
-    <div class="td" style="flex-grow: 2;">
-    cost center
+    <div class="td">
+    cost
     </div>
     <div class="td">
       Debit
@@ -88,19 +88,19 @@
       <span>1002</span>
     </div>
     <div class="td"
-      style="flex-grow: 2; justify-content: center;">
-      <span>  Swinx Cap Accounts</span>
+      style="flex-grow: 2; justify-content:  flex-start;">
+      <span>  SwinxAccounts</span>
     </div>
     <div class="td"
       style="justify-content: center;">
       <span>  10000.00</span>
     </div>
     <div class="td"
-      style="justify-content: center;">
+      style="justify-content: flex-start;">
       <span>  OFS</span>
     </div>
     <div class="td"
-      style="justify-content: flex-end;" style="flex-grow: 2;">
+      style="justify-content: flex-start;">
       <span>  VK</span>
     </div>
     <div class="td"
@@ -118,19 +118,19 @@
       <span>1023</span>
     </div>
     <div class="td"
-      style=" flex-grow: 2; justify-content: center;">
-      <span>  Google Accounts</span>
+      style=" flex-grow: 2; justify-content: flex-start;">
+      <span>  GoogleAccounts</span>
     </div>
     <div class="td"
       style="justify-content: center;">
       <span>  1500.00</span>
     </div>
     <div class="td"
-      style="justify-content: center;">
+      style="justify-content:  flex-start;">
       <span>  SWINX</span>
     </div>
     <div class="td"
-      style="justify-content: flex-end;" style="flex-grow: 2;">
+      style="justify-content:  flex-start;">
       <span>  OFS</span>
     </div>
     <div class="td"
@@ -149,7 +149,7 @@
       <span>1300</span>
     </div>
     <div class="td"
-      style=" flex-grow: 2; justify-content: center;">
+      style=" flex-grow: 2; justify-content:  flex-start;">
       <span>Microsoft Billing</span>
     </div>
     <div class="td"
@@ -157,11 +157,11 @@
       <span>  1500.00</span>
     </div>
     <div class="td"
-      style="justify-content: center;">
+      style="justify-content:  flex-start;">
       <span>  IOS</span>
     </div>
     <div class="td"
-      style="justify-content: flex-end;" style="flex-grow: 2;">
+      style="justify-content:  flex-start;" >
       <span>  OFS</span>
     </div>
     <div class="td"

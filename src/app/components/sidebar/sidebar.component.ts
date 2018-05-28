@@ -30,12 +30,12 @@ export const ROUTES : any[] = [
     { path: '/sentinvoice', title: 'Sent Invoice',  icon:'send', class: '1', droparrow: true,
       dropdown:
       [
-        { path: '/SentProjects', title: 'Projects',  icon:'P', class: '' },
-        { path: '/SentCostcenters', title: 'CostCenters',  icon:'monetization_on', class: '' }
+        { path: '/projects', title: 'Projects',  icon:'P', class: '' },
+        { path: '/costcenters', title: 'CostCenters',  icon:'monetization_on', class: '' }
       ]
     },
     { path: '/parked', title: 'Parked',  icon:'bubble_chart', class: '' },
-    { path: '/flow', title: 'Invoice Flow',  icon:'description', class: '',droparrow: true,
+    {  title: 'Invoice Flow',  icon:'description', class: '',droparrow: true,
     dropdown:
     [
       { path: '/notregistered', title: 'NotRegistered',  icon:'no_sim', class: '' },
@@ -53,7 +53,7 @@ export const ROUTES : any[] = [
     ]
     },
     { path: '/suppliersList', title: 'Suppliers List',  icon:'list', class: '' },
-    { path: '/Printer', title: 'Printer',  icon:'print', class: '',droparrow: true,
+    { title: 'Printer',  icon:'print', class: '',droparrow: true,
     dropdown:
     [
       { path: '/Projects', title: 'Projects',  icon:'P', class: '' },
@@ -64,12 +64,13 @@ export const ROUTES : any[] = [
       { path: '/MergeInvoice', title: 'Merge Invoice',  icon:'merge_type', class: '' },
       { path: '/ExcelExport', title: 'Excel Export',  icon:'explicit', class: '' }
     ] },
-    { path: '/Settings', title: 'Settings',  icon:'settings', class: '',droparrow:true,
+    {  title: 'Settings',  icon:'settings', class: '',droparrow:true,
     dropdown:[
       { path: '/properties', title: 'properties',  icon:'settings_input_component', class: '' },
       { path: '/company', title: 'company',  icon:'card_travel', class: '' },
       { path: '/user',title: 'users',  icon:'supervised_user_circle', class: '' },
       { path: '/createtemplate',title: 'Create Template',  icon:'local_hospital', class: '' },
+      { path: '/invoicedetail', title: '',  icon:'', class: '' },
     ]
    },
 ];

@@ -1,13 +1,6 @@
 import { Routes } from '@angular/router';
 
-import { DashboardComponent } from '../../dashboard/dashboard.component';
-import { UserProfileComponent } from '../../user-profile/user-profile.component';
-import { TableListComponent } from '../../table-list/table-list.component';
-import { TypographyComponent } from '../../typography/typography.component';
-import { IconsComponent } from '../../icons/icons.component';
-import { MapsComponent } from '../../maps/maps.component';
-import { NotificationsComponent } from '../../notifications/notifications.component';
-import { UpgradeComponent } from '../../upgrade/upgrade.component';
+
 import { SuppliersListComponent } from '../../suppliers-list/suppliers-list.component';
 import { ToApproveComponent } from '../../to-approve/to-approve.component';
 import { SentinvoiceComponent } from '../../sentinvoice/sentinvoice.component';
@@ -24,6 +17,8 @@ import { PropertiesComponent } from '../../properties/properties.component';
 import { CompanyComponent } from '../../company/company.component';
 import { UserComponent } from '../../user/user.component';
 import { CreatetemplateComponent } from '../../createtemplate/createtemplate.component';
+import { InvoicedetailComponent } from '../../invoicedetail/invoicedetail.component';
+
 export const AdminLayoutRoutes: Routes = [
     // {
     //   path: '',
@@ -67,14 +62,7 @@ export const AdminLayoutRoutes: Routes = [
     //         component: UpgradeComponent
     //     }]
     // }
-    { path: 'dashboard',      component: DashboardComponent },
-    { path: 'user-profile',   component: UserProfileComponent },
-    { path: 'table-list',     component: TableListComponent },
-    { path: 'typography',     component: TypographyComponent },
-    { path: 'icons',          component: IconsComponent },
-    { path: 'maps',           component: MapsComponent },
-    { path: 'notifications',  component: NotificationsComponent },
-    { path: 'upgrade',        component: UpgradeComponent },
+
     { path: 'suppliersList',  component: SuppliersListComponent },
     { path: 'toapprove',      component: ToApproveComponent },
     { path: 'sentinvoice',    component: SentinvoiceComponent },
@@ -91,5 +79,6 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'company',        component: CompanyComponent },
     { path: 'user',           component: UserComponent },
     { path: 'createtemplate', component: CreatetemplateComponent },
+    { path: 'invoicedetail', component: InvoicedetailComponent },
 
 ];

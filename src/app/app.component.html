@@ -1,2 +1,13 @@
+<div class="preloader"  *ngIf="loading">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="65px" height="62px" viewBox="0 0 45 42" enable-background="new 0 0 45 42" xml:space="preserve">  <image id="image0" width="45" height="42" x="0" y="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAqCAMAAAAQwSIQAAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABIFBMVEUtM4ktM4ktM4ktM4kt M4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4kt M4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4kt M4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4kt M4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4kt M4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4ktM4n///+mbKCEAAAAXnRS TlMAHlSWh1EbZu32ug8JMwN182wkSDwwwOoGn64/fhV7xsmc5zm024pLNiESq9gtzE5a0sPw/Ayl z4R44Wlgmb2xgRAHYwECBJALBQgK3if5QqgqRdUYuBcfQKrE5HJdspiNagAAAAFiS0dEX3PRUS0A AAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfiBBAAJyozv5rFAAACU0lEQVQ4y42V60LaQBCF twiGSxLlKhACaqVQrooElBqLGqy1xdrW3u2+/2N0ZneBhSyh8yeTyZfdMyfDQsjaeBHaCke2yf+F FqUQsbiW2ETqhmbu7FIeu8n1YCqUzmRzdC9PCnQWxbyatUps4xylcLHLFYHvq+RbBwYXcshoiJdH HK/aq6z5KmyKtKbVZ2m6ylfXl+HXRyGluAaX01wqGq32mr4THYZ3pdJxtLbWJvsE6c5ci9Wj5QD7 U6dA9+vizmnRnhlAk2NcfMBtckqUZklgoPRYmqX1Kh0Gw6SGi5+xdEDp+QbaHAHdw0yPUdreQJMw SkFX3kC/2UbQXDoX7iVKsWCTt8z8cZCOQz4tF4S0mfe0Ij++ul7Gm5wuEZKBqe+57k1j8dCb3Hqe TNtGFz9QAei5N7OYAO+tiCFoyoDT7+T63XsfCoGD63K6J5XvP0xU9EfuxBQuLUmGuVAhvWU+AHYD CdjTn7cIqKR5kdXRk0+QPEqjjqRKBzkH6NSBJAlJXMiAlU0lPZw5t42bfGbwLQicqOAvyKRYesmN J+a9pzCaFeIL47qiAxOF+Jb1TDHes6nGN0eJa9UnJATUJb5ij0+iYKGZ376r7bjazhfFSIkY423h x52qQfLzFz4dspOT/dZ1dh791lWwzsY1ZkilLJvfk6kfzvKTaunUs6Y4NfRh3FhmG1t9Bu+srPG0 z8qxA2lLyxX/D5pvS+dRHO0tV8MoF/6Iwl5E1U9tRFVRtIkynLOoj61kyNpwkjmJ7MefDRIcduTZ zXU6nab713ci/QMLkKcQ8dU5fwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNC0xNlQwMDozOTo0 Mi0wNzowMMPJXzYAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDQtMTZUMDA6Mzk6NDItMDc6MDCy lOeKAAAAAElFTkSuQmCC"/>
+  </svg>
+  <div id="preloader">
+  		<div class="arrow_sec"></div>
+  		<div class="arrow_min"></div>
+  </div>
+  <p style="font-size:large; font-weight:700; color: rgb(45,51,137);"> SWINX </p>
+</div>
 
-<router-outlet></router-outlet>
+<div *ngIf="!loading">
+  <router-outlet></router-outlet>
+</div>

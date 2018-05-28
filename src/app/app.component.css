@@ -1,0 +1,106 @@
+
+
+.arrow_sec{
+	position:absolute;
+	top:55%;
+	left:55%;
+    border:  1.5px solid rgb(45,51,137);
+    border-top: 15px solid  rgb(45,51,137);
+	margin:-16px 0 0 -1px;
+	background:#666;
+	-webkit-animation:rotation 1s linear 0s infinite;
+	-moz-animation:rotation 1s linear 0s infinite;
+	animation:rotation 1s linear 0s infinite;
+	-webkit-transform-origin: center bottom;
+	-moz-transform-origin: center bottom;
+	transform-origin: center bottom;
+}
+.arrow_min{
+	position:absolute;
+	top:55%;
+	left:55%;
+    border: 2 solid rgb(45,51,137);
+    border-top: 11px solid rgb(45,51,137);
+	margin:-12px 0 0 -1px;
+	background:#666;
+	-webkit-animation:rotation 1s linear 0s infinite;
+	-moz-animation:rotation 1s linear 0s infinite;
+	animation:rotation 1s linear 0s infinite;
+	-webkit-transform-origin: center bottom;
+	-moz-transform-origin: center bottom;
+	transform-origin: center bottom;
+}
+
+@-webkit-keyframes rotation {
+	0%{
+ 		-webkit-transform: rotate(0deg);
+	}
+ 	100% {
+ 		-webkit-transform: rotate(360deg);
+	}
+}
+@keyframes rotation {
+	0%{
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+/* end vars */
+
+.preloader {
+  position: absolute;
+  width: 4em;
+  height: 4em;
+  border: transparent;
+  border-radius: 100%;
+}
+.preloader:before,
+.preloader:after {
+  content: '';
+  position: absolute;
+  top: 55%;
+  left: 55%;
+  margin: -.2rem 0 0 -.2rem;
+  border-bottom: .25rem solid rgb(45,51,137);
+  border-radius: .3rem;
+  -webkit-transform-origin: .2rem center;
+}
+.preloader:before { /* hour hand */
+  width: 25%;
+  -webkit-animation: hour 5s linear infinite;
+}
+.preloader:after { /* minute hand */
+  /* width: 30%; */
+  background-color: rgb(45,51,137);
+  -webkit-animation: minute .5s/4 linear infinite;
+}
+
+@-webkit-keyframes hour {
+  0%{
+		transform: rotate(0deg);
+	}
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes minute {
+  0%{
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/* for demo purposes only — not required */
+/* for demo purposes only — not required */
+.preloader {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

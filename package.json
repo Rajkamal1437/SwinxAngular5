@@ -25,6 +25,7 @@
     "@angular/platform-browser-dynamic": "6.0.0",
     "@angular/platform-server": "6.0.0",
     "@angular/router": "6.0.0",
+    "@material/form-field": "^0.35.0",
     "@material/textfield": "^0.35.1",
     "ajv": "6.5.0",
     "arrive": "2.4.1",
