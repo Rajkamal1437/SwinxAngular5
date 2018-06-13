@@ -3,7 +3,6 @@ import {MatDividerModule} from '@angular/material/divider';
 import {FormControl} from '@angular/forms';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
 
-
 @Component({
   selector: 'app-invoicedetail',
   templateUrl: './invoicedetail.component.html',
@@ -42,7 +41,6 @@ CertifierName : string;
   templateUrl: 'invoicedetail.popup.html',
 })
 export class invoicedetailpopup {
-
   constructor(
     public dialogRef: MatDialogRef<invoicedetailpopup>,
     @Inject(MAT_DIALOG_DATA) public data: any) { }
@@ -50,5 +48,4 @@ export class invoicedetailpopup {
   onNoClick(): void {
     this.dialogRef.close();
   }
-
 }

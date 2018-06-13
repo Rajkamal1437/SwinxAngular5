@@ -3,11 +3,7 @@
 <br>
 <br>
 <br>
-
 <div class="container-fluid">
-
-
-
   <div class="row">
     <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12" style="background:#fff;">
   <form class="example-form">
@@ -17,7 +13,7 @@
       <input matInput placeholder="Type" value="Debit Invoice">
     </mat-form-field></td>
     <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="Serial No" value="15345" >
+      <input matInput placeholder="Serial No" value="15345">
     </mat-form-field></td>
     <td><mat-form-field class="example-full-width">
       <input matInput #postalCode maxlength="5" placeholder="Status" value="Registrerad">
@@ -176,8 +172,22 @@
 </div>
     </div>
 
-    <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12" style="background:#fff;" >
-        <img src="/assets/img/invoice.jpg"/>
+    <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12" style="background:#fff; " >
+        <img src="/assets/img/invoice.jpg" width="350px" style=" margin: 50px 50px 10px 50px;; border: 1px solid;"/>
+            <mat-button-toggle-group #group="matButtonToggleGroup"  class="example-selected-value">
+            <mat-button-toggle value="left">
+              <mat-icon>navigate_before</mat-icon>
+            </mat-button-toggle>
+            <mat-button-toggle value="center">
+              <mat-icon>zoom_in</mat-icon>
+            </mat-button-toggle>
+            <mat-button-toggle value="right">
+              <mat-icon>zoom_out</mat-icon>
+            </mat-button-toggle>
+            <mat-button-toggle value="justify">
+              <mat-icon>navigate_next</mat-icon>
+            </mat-button-toggle>
+          </mat-button-toggle-group>
     </div>
   </div>
 </div>

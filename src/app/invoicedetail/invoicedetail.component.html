@@ -5,231 +5,243 @@
 <br>
 
 <div class="container-fluid">
-
   <div class="row">
-  <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12" style="background:#fff;">
-  <br>
-   <button mat-mini-fab color="primary" style="margin-left:10px;"><i class="material-icons"  matTooltip="Save">save</i></button>
-   <button mat-mini-fab color="primary" style="margin-left:10px;"><i class="material-icons"  matTooltip="Reload">replay</i></button>
-   <button mat-mini-fab color="primary" style="margin-left:10px;"><i class="material-icons"  matTooltip="Delete Images">grid_off</i></button>
-   <button mat-mini-fab color="primary" style="margin-left:10px;"><i class="material-icons"  matTooltip="Add Images">add_photo_alternate</i></button>
-
-    <button mat-mini-fab color="primary" style="margin-left:10px;"><i class="material-icons"  matTooltip="Approve">done</i></button>
-   <button mat-mini-fab color="primary" style="margin-left:10px;"><i class="material-icons"  matTooltip="Calculate Templete">local_hospital</i></button>
-   <button mat-mini-fab color="primary" class="material-icons" style="color:#fff; margin-left:10px;" matTooltip="Park">V</button>
-   <button mat-mini-fab color="primary" style="margin-left:10px;"><i class="material-icons"  matTooltip="Delete">delete</i></button>
-  <br>
-  <br>
-  <mat-tab-group>
-  <mat-tab label="Codings">
-  <form class="example-form">
-    &nbsp; &nbsp;&nbsp;<p style="font-weight:700; margin-left:15px;">INVOICE</p>
-
-    <div  class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-  <table class="example-full-width" cellspacing="0" class="col-md-6 col-lg-6 col-sm-12 col-xs-6"><tr>
-    <td><mat-form-field class="example-full-width" >
-      <input matInput placeholder="Supplier" value="18">
-    </mat-form-field></td>
-    <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="Invoice Amount" value="15000" >
-    </mat-form-field></td>
-    <td>
-    <mat-form-field>
-      <input matInput [matDatepicker]="picker" placeholder="Invoice date " [value]="date.value">
-      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-      <mat-datepicker #picker></mat-datepicker>
-    </mat-form-field>
-  </td>
-
-  </tr>
-  <tr>
-    <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="Supplier Name " value="SWINX AB">
-  </mat-form-field></td>
-    <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="Invoice No" value="154350012">
-    </mat-form-field></td>
-    <td>
-    <mat-form-field>
-      <input matInput [matDatepicker]="picker2" placeholder="Invoice  Due date " [value]="date.value">
-      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
-      <mat-datepicker #picker2></mat-datepicker>
-    </mat-form-field>
-  </td>
-  </tr>
-  <tr style="border-bottom:1px solid #cacaca;">
-    <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="Exchange rate" value="1.000" >
-    </mat-form-field></td>
-    <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="project" value="SWINX AB" >
-    </mat-form-field></td>
-    <td><mat-form-field class="example-full-width">
-      <input matInput  placeholder="Cost Center" value="OFS TECH" >
-    </mat-form-field></td>
-  </tr>
-
-  <p style="margin-top:10px;font-weight:700;"> CERTIFIER </p>
-  <tr style="border-bottom:1px solid #cacaca;">
-    <td><mat-form-field class="example-full-width" (click)="openDialog()">
-      <input matInput placeholder="Certifier" value="PER;RAJ;" >
-    </mat-form-field></td>
-    <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="Approver" value="CS;" >
-    </mat-form-field></td>
-    <td>
-      <mat-slide-toggle
-              class="example-margin"
-              [color]="primary"
-              [checked]="checked"
-              [disabled]="disabled"  style="margin-left:30px;">
-            Credit
-      </mat-slide-toggle>
+    <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12" style="background:#fff;">
       <br>
-      <mat-slide-toggle
-              class="example-margin"
-              [color]="primary"
-              [checked]="checked"
-              [disabled]="disabled" style="margin-left:30px;">
-            Discretion
-      </mat-slide-toggle></td>
-  </tr>
-</table>
-</div>
-</form>
-<div class="table" style="width:95%; font-size: 14px !important;">
-  <div class="tr th" style="color:#fff; background-color:#2e348a;">
-    <div class="td">
-      Acc
-    </div>
-    <div class="td"   style="flex-grow: 2;">
-    Info
-    </div>
-    <div class="td">
-        Amt
-    </div>
-    <div class="td">
-      project
-    </div>
-    <div class="td" >
-    Cost
-    </div>
-    <div class="td">
-      Debit
-    </div>
-    <div class="td">
-      Credit
-    </div>
-  </div>
+      <button mat-mini-fab color="primary" style="margin-left:10px;"><i class="material-icons"  matTooltip="Save">save</i></button>
+      <button mat-mini-fab color="primary" style="margin-left:10px;"><i class="material-icons"  matTooltip="Reload">replay</i></button>
+      <button mat-mini-fab color="primary" style="margin-left:10px;"><i class="material-icons"  matTooltip="Delete Images">grid_off</i></button>
+      <button mat-mini-fab color="primary" style="margin-left:10px;"><i class="material-icons"  matTooltip="Add Images">add_photo_alternate</i></button>
 
-  <div class="tr">
-    <div class="td" style="justify-content: flex-end;">
-      <span>1002</span>
-    </div>
-    <div class="td"
-      style="flex-grow: 2; justify-content: center;">
-      <span>  Stark Accounts</span>
-    </div>
-    <div class="td"
-      style="justify-content: center;">
-      <span>  10000.00</span>
-    </div>
-    <div class="td"
-      style="justify-content: center;">
-      <span>  OFS</span>
-    </div>
-    <div class="td"
-      style="justify-content: flex-end;">
-      <span>  VK</span>
-    </div>
-    <div class="td"
-      style="justify-content: flex-end;">
-      <span>  100.00</span>
-    </div>
-    <div class="td"
-      style="justify-content: flex-end;">
-      <span>  0.00</span>
-    </div>
-  </div>
+      <button mat-mini-fab color="primary" style="margin-left:10px;"><i class="material-icons"  matTooltip="Approve">done</i></button>
+      <button mat-mini-fab color="primary" style="margin-left:10px;"><i class="material-icons"  matTooltip="Calculate Templete">local_hospital</i></button>
+      <button mat-mini-fab color="primary" class="material-icons" style="color:#fff; margin-left:10px;" matTooltip="Park">V</button>
+      <button mat-mini-fab color="primary" style="margin-left:10px;"><i class="material-icons"  matTooltip="Delete">delete</i></button>
+      <br>
+      <br>
+      <mat-tab-group>
+        <mat-tab label="Codings">
+          <form class="example-form">
+            &nbsp; &nbsp;&nbsp;
+            <p style="font-weight:700; margin-left:15px;">INVOICE</p>
+
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+              <table class="example-full-width" cellspacing="0" class="col-md-6 col-lg-6 col-sm-12 col-xs-6">
+                <tr>
+                  <td>
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Supplier" value="18">
+                    </mat-form-field>
+                  </td>
+                  <td>
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Invoice Amount" value="15000">
+                    </mat-form-field>
+                  </td>
+                  <td>
+                    <mat-form-field>
+                      <input matInput [matDatepicker]="picker" placeholder="Invoice date " [value]="date.value">
+                      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                      <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                  </td>
+
+                </tr>
+                <tr>
+                  <td>
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Supplier Name " value="SWINX AB">
+                    </mat-form-field>
+                  </td>
+                  <td>
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Invoice No" value="154350012">
+                    </mat-form-field>
+                  </td>
+                  <td>
+                    <mat-form-field>
+                      <input matInput [matDatepicker]="picker2" placeholder="Invoice  Due date " [value]="date.value">
+                      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                      <mat-datepicker #picker2></mat-datepicker>
+                    </mat-form-field>
+                  </td>
+                </tr>
+                <tr style="border-bottom:1px solid #cacaca;">
+                  <td>
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Exchange rate" value="1.000">
+                    </mat-form-field>
+                  </td>
+                  <td>
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="project" value="SWINX AB">
+                    </mat-form-field>
+                  </td>
+                  <td>
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Cost Center" value="OFS TECH">
+                    </mat-form-field>
+                  </td>
+                </tr>
+
+                <p style="margin-top:10px;font-weight:700;"> CERTIFIER </p>
+                <tr style="border-bottom:1px solid #cacaca;">
+                  <td>
+                    <mat-form-field class="example-full-width" (click)="openDialog()">
+                      <input matInput placeholder="Certifier" value="PER;RAJ;">
+                    </mat-form-field>
+                  </td>
+                  <td>
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Approver" value="CS;">
+                    </mat-form-field>
+                  </td>
+                  <td>
+                    <mat-slide-toggle class="example-margin" [color]="primary" [checked]="checked" [disabled]="disabled" style="margin-left:30px;">
+                      Credit
+                    </mat-slide-toggle>
+                    <br>
+                    <mat-slide-toggle class="example-margin" [color]="primary" [checked]="checked" [disabled]="disabled" style="margin-left:30px;">
+                      Discretion
+                    </mat-slide-toggle>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </form>
+          <div class="table" style="width:95%; font-size: 14px !important;">
+            <div class="tr th" style="color:#fff; background-color:#2e348a;">
+              <div class="td">
+                Acc
+              </div>
+              <div class="td" style="flex-grow: 2;">
+                Info
+              </div>
+              <div class="td">
+                Amt
+              </div>
+              <div class="td">
+                project
+              </div>
+              <div class="td">
+                Cost
+              </div>
+              <div class="td">
+                Debit
+              </div>
+              <div class="td">
+                Credit
+              </div>
+            </div>
+
+            <div class="tr">
+              <div class="td" style="justify-content: flex-end;">
+                <span>1002</span>
+              </div>
+              <div class="td" style="flex-grow: 2; justify-content: center;">
+                <span>  Stark Accounts</span>
+              </div>
+              <div class="td" style="justify-content: center;">
+                <span>  10000.00</span>
+              </div>
+              <div class="td" style="justify-content: center;">
+                <span>  OFS</span>
+              </div>
+              <div class="td" style="justify-content: flex-end;">
+                <span>  VK</span>
+              </div>
+              <div class="td" style="justify-content: flex-end;">
+                <span>  100.00</span>
+              </div>
+              <div class="td" style="justify-content: flex-end;">
+                <span>  0.00</span>
+              </div>
+            </div>
+
+            <div class="tr">
+              <div class="td" style="justify-content: flex-end;">
+                <span>1012</span>
+              </div>
+              <div class="td" style="flex-grow: 2; justify-content: center;">
+                <span> Cap Accounts</span>
+              </div>
+              <div class="td" style="justify-content: center;">
+                <span>  500.00</span>
+              </div>
+              <div class="td" style="justify-content: center;">
+                <span>  VISMA</span>
+              </div>
+              <div class="td" style="justify-content: flex-end;">
+                <span>  OFS</span>
+              </div>
+              <div class="td" style="justify-content: flex-end;">
+                <span>  1200.00</span>
+              </div>
+              <div class="td" style="justify-content: flex-end;">
+                <span>  0.00</span>
+              </div>
+            </div>
 
 
+          </div>
 
-  <div class="tr">
-    <div class="td" style="justify-content: flex-end;">
-      <span>1012</span>
-    </div>
-    <div class="td"
-      style="flex-grow: 2; justify-content: center;">
-      <span> Cap Accounts</span>
-    </div>
-    <div class="td"
-      style="justify-content: center;">
-      <span>  500.00</span>
-    </div>
-    <div class="td"
-      style="justify-content: center;">
-      <span>  VISMA</span>
-    </div>
-    <div class="td"
-      style="justify-content: flex-end;">
-      <span>  OFS</span>
-    </div>
-    <div class="td"
-      style="justify-content: flex-end;">
-      <span>  1200.00</span>
-    </div>
-    <div class="td"
-      style="justify-content: flex-end;">
-      <span>  0.00</span>
-    </div>
-  </div>
+          <br>
+          <br>
+        </mat-tab>
+        <mat-tab label="Savings">
+          <div class="item">
+            <span class="material-icons">publish</span>
+            <div>Status changed on exported invoice </div>
+            <p>
+              <strong>USER NAME</strong> : Per-Åke AronssonX
+              <strong>TRANSSACTION DATE</strong> : 2018/05/07 13:11:22
+            </p>
+          </div>
+          <div class="item">
+            <span class="material-icons">verified_user</span>
+            <div>Certified</div>
+            <p>
+              <strong>USER NAME</strong> : Per-Åke AronssonX
+              <strong>TRANSSACTION DATE</strong> : 2018/05/04 19:57:13
+            </p>
+          </div>
+          <div class="item">
+            <span class="material-icons">check_circle</span>
+            <div>Approved</div>
+            <p>
+              <strong>USER NAME</strong> : Per-Åke AronssonX
+              <strong>TRANSSACTION DATE</strong> : 2018/05/04 19:56:10
+            </p>
+          </div>
+          <div class="item">
+            <span class="material-icons">how_to_reg</span>
+            <div>Registered</div>
+            <p>
+              <strong>USER NAME</strong> : Per-Åke AronssonX
+              <strong>TRANSSACTION DATE</strong> : 2018/05/04 19:54:35
+            </p>
+          </div>
 
-
-</div>
-
-<br>
-<br>
-</mat-tab>
-<mat-tab label="Savings">
-  <div class="item">
- 	            <span class="material-icons">publish</span>
- 	            <div>Status changed on exported invoice </div>
-     	        <p>
-     	           <strong>USER NAME</strong>         : Per-Åke AronssonX
-                 <strong>TRANSSACTION DATE</strong> : 2018/05/07 13:11:22
-     	        </p>
- 	        </div>
- 	        	        <div class="item">
- 	            <span class="material-icons">verified_user</span>
- 	            <div>Certified</div>
-              <p>
-                  <strong>USER NAME</strong>         : Per-Åke AronssonX
-                 <strong>TRANSSACTION DATE</strong> : 2018/05/04 19:57:13
-               </p>
- 	        </div>
- 	        	        <div class="item">
- 	            <span class="material-icons">check_circle</span>
- 	            <div>Approved</div>
-              <p>
-                 <strong>USER NAME</strong>         : Per-Åke AronssonX
-                 <strong>TRANSSACTION DATE</strong> : 2018/05/04 19:56:10
-               </p>
- 	        </div>
- 	        	        <div class="item">
- 	            <span class="material-icons">how_to_reg</span>
- 	            <div>Registered</div>
-              <p>
-     	           <strong>USER NAME</strong>         : Per-Åke AronssonX
-                 <strong>TRANSSACTION DATE</strong> : 2018/05/04 19:54:35
-     	        </p>
-      </div>
-
-</mat-tab>
-</mat-tab-group>
+        </mat-tab>
+      </mat-tab-group>
     </div>
 
-    <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12" style="background:#fff;" >
-        <img src="/assets/img/invoice1.jpg" width="350px"/>
+    <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12" style="background:#fff;">
+      <img src="/assets/img/invoice1.jpg" width="350px" style="border: 1px solid; margin: 50px 50px 10px 50px;" />
+      <mat-button-toggle-group #group="matButtonToggleGroup" class="example-selected-value">
+        <mat-button-toggle value="left">
+          <mat-icon>navigate_before</mat-icon>
+        </mat-button-toggle>
+        <mat-button-toggle value="center">
+          <mat-icon>zoom_in</mat-icon>
+        </mat-button-toggle>
+        <mat-button-toggle value="right">
+          <mat-icon>zoom_out</mat-icon>
+        </mat-button-toggle>
+        <mat-button-toggle value="justify">
+          <mat-icon>navigate_next</mat-icon>
+        </mat-button-toggle>
+      </mat-button-toggle-group>
     </div>
   </div>
 </div>

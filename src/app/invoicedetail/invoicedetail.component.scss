@@ -18,7 +18,11 @@
     background: #555;
 }
 
-
+.example-selected-value {
+  align-items: center;
+  margin: 10px;
+  margin-left: 25%;
+}
 
 .mat-form-field-label-wrapper {
     font-size: 15px;
@@ -170,4 +174,14 @@ mat-tooltip {
     max-width: 200px;
     padding-left: 5px;
     padding-right: 5px;
+   }
+
+
+   @media (min-width: 992px){
+
+     .col-lg-6 {
+         flex: 0 0 50%;
+         max-width: 95%;
+     }
+
    }

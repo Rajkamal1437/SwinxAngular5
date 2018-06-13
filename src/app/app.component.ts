@@ -46,7 +46,7 @@ export class AppComponent {
     if (event instanceof NavigationError) {
       setTimeout(() => { // here
         this.loading = false;
-      }, 500);
+      }, 1000);
     }
   }
 }

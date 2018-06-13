@@ -1,0 +1,249 @@
+<br>
+<br>
+<br>
+<hr>
+<div class="container" style="background:#fff;">
+  <div class="row">
+    <div class="col-md-9 col-sm-9 col-xs-9" style="margin-top: 30px;">
+      <p><strong  style="font-weight:800">Project ID :</strong> 123 </p>
+      <form class="navbar-form" style="margin-top:20px;">
+          <div class="input-group no-border ">
+            <label for="Certifier" style="font-weight:700; margin-left:30px;">Approver</label>
+            <input type="text"  class="form-control" placeholder="Approver" value="PER; DK;" style="max-width:200px; width:200px; margin-top:-5px; margin-left:5px;">
+            <button mat-raised-button type="submit" class="btn btn-blue btn-round btn-just-icon" style="margin-top:-5px; background: #2e348a;">
+                  <i class="material-icons">search</i>
+                  <div class="ripple-container"></div>
+              </button>
+              <label for="Certifier" style="font-weight:700; margin-left:30px;">Certifier</label>
+              <input type="text"  class="form-control" placeholder="Certifier" value="RAJ;" style="max-width:200px; width:200px; margin-top:-5px; margin-left:5px;">
+            <button mat-raised-button type="submit" class="btn btn-blue btn-round btn-just-icon" style="margin-top:-5px; background: #2e348a;">
+                  <i class="material-icons">search</i>
+                  <div class="ripple-container"></div>
+              </button>
+          </div>
+      </form>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-3">
+      <button mat-mini-fab color="primary" style="margin-right: 10px;   top:10px; right: 91px; position: absolute;"><i class="material-icons"  matTooltip="Save">save</i></button>
+      <button mat-mini-fab color="primary"  style="color:#fff; margin-right:10px;  top:10px;  right: 45px; position: absolute;" matTooltip="Cancel"><i class="material-icons">cancel</i></button>
+      <button mat-mini-fab color="primary" style="margin-right:10px;  top:10px; right: 0px; position: absolute;"><i class="material-icons"  matTooltip="Merge">merge_type</i></button>
+    </div>
+  </div>
+
+
+  <div class="table-responsive">
+      <table class="table">
+          <thead class=" text-primary" style="color: #fff !important; background-color: #2e348a;">
+             <th>
+             <mat-checkbox class="example-margin"  color="primary" [(ngModel)]="checked"></mat-checkbox>
+             </th>
+              <th>
+                  Status
+              </th>
+              <th>
+                  Serial no
+              </th>
+              <th>
+                  Doc no
+              </th>
+              <th>
+                  supplier Name
+              </th>
+              <th>
+                  Invoice Date
+              </th>
+              <th>
+                  Invoice no
+              </th>
+              <th>
+                  Total
+              </th>
+              <th>
+                  Approver
+              </th>
+              <th>
+                  Certifier
+              </th>
+          </thead>
+          <tbody>
+              <tr>
+                <td>
+                <mat-checkbox class="example-margin" color="primary" [(ngModel)]="checked"></mat-checkbox>
+              </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                    <button mat-mini-fab color="primary" class="material-icons" style="color:#fff;">A</button>
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      15425
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      127
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']" class="text-primary">
+                      SWINX AB
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      2018/05/03
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      124578963
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      500.00
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']" class="text-primary">
+                      PER;
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']" class="text-primary">
+                      CS;
+                  </td>
+              </tr>
+
+              <tr>
+                <td>
+                <mat-checkbox class="example-margin" color="primary"></mat-checkbox>
+              </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                    <button mat-mini-fab color="primary" class="material-icons" style="color:#fff;">R</button>
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      15424
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      100
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']" class="text-primary">
+                      OFS OCEANA AB
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      2018/03/09
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      175426389
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      1500.00
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']" class="text-primary">
+                      PER;RAJ;
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']" class="text-primary">
+                      ARON;
+                  </td>
+              </tr>
+
+              <tr>
+                <td>
+                <mat-checkbox class="example-margin" color="primary"></mat-checkbox>
+              </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                    <button mat-mini-fab color="primary" class="material-icons" style="color:#fff;">DG</button>
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      15423
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      102
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']" class="text-primary">
+                      CHENNAI SUPER KINGS AB
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      2018/01/26
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      1754284652
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      1800.00
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']" class="text-primary">
+                      CSK;
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']" class="text-primary">
+                      MIK;
+                  </td>
+              </tr>
+
+              <tr>
+                <td>
+                <mat-checkbox class="example-margin"  color="primary"></mat-checkbox>
+              </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                    <button mat-mini-fab color="primary" class="material-icons" style="color:#fff;">M</button>
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      15421
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      190
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']" class="text-primary">
+                      OFS Tech AB
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      2018/01/03
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      155428389
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      5000.00
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']" class="text-primary">
+                      RAJ;
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']" class="text-primary">
+                      TECH;
+                  </td>
+              </tr>
+
+
+
+
+              <tr>
+                <td>
+                <mat-checkbox class="example-margin" color="primary" ></mat-checkbox>
+              </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                    <button mat-mini-fab color="primary" class="material-icons" style="color:#fff;">Ö</button>
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      15413
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      160
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']" class="text-primary">
+                      SWINX Phase II AB
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      2017/10/05
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      104526389
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']">
+                      5500.00
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']" class="text-primary">
+                      PER;
+                  </td>
+                  <td routerLinkActive="active" [routerLink]="['/invoicedetail']" class="text-primary">
+                      PER;
+                  </td>
+              </tr>
+
+
+
+
+            </tbody>
+      </table>
+  </div>
+
+  <mat-paginator [length]="30"
+            [pageSize]="10"
+            #paginator
+              [showFirstLastButtons]="true" style="font-size:18px;">
+  </mat-paginator>
+</div>

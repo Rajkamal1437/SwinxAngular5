@@ -3,7 +3,6 @@
         <div class="logo-img">
             <img src="/assets/img/Swinx_Logo.png"/>
         </div>     <b style="word-spacing: 5px;">.a SWINX SCANLEV </b>
-
     </a>
 </div>
 <div class="sidebar-wrapper">
@@ -19,7 +18,6 @@
         </div>
       </span>
     </form>
-
   </div>
     <ul class="nav">
         <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item" (click)="menuItem.droparrow = !menuItem.droparrow" >
@@ -33,13 +31,19 @@
             </a>
             <ul class="nav" *ngIf="!menuItem.droparrow">
                 <li *ngFor="let dropdown of menuItem.dropdown" class="{{dropdown.class}} nav-item">
-                    <a class="nav-link" [routerLink]="[dropdown.path]" style="margin-left:40px;">
+                    <a class="nav-link" [routerLink]="[dropdown.path]" *ngIf="menuItem.title != 'Printer'" style="margin-left:40px;">
                         <i class="material-icons">{{dropdown.icon}}</i>
                         <p> {{dropdown.title}}</p>
                     </a>
                 </li>
+                <li *ngFor="let dropdown of menuItem.dropdown" class="{{dropdown.class}} nav-item">
+                    <a class="nav-link"  *ngIf="menuItem.title == 'Printer'" style="margin-left:40px;">
+                        <i class="material-icons">{{dropdown.icon}}</i>
+                        <p  (click)= "openprint(dropdown.title)"> {{dropdown.title}}</p>    
+                    </a>
+                </li>
+
             </ul>
         </li>
     </ul>
-
 </div>

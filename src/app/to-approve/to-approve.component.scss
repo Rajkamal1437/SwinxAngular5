@@ -2,11 +2,14 @@
     font-size: 15px;
     color:#2e348a  !important;
 }
-
+.example-selected-value {
+  align-items: center;
+  margin: 10px;
+  margin-left: 25%;
+}
 .table {
   display: flex;
   flex-flow: column nowrap;
-  margin: 0.5rem;
   line-height: 1.5;
   border-bottom: 1px solid #d0d0d0;
   flex: 1 1 auto;
@@ -96,5 +99,11 @@ input.mat-input-element {
   margin-left: 30px;
     flex: 0 0 58.33333333%;
     max-width: 58.33333333%;
+}
+
+.col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 100%;
+    margin-top: 30px;
 }
 }

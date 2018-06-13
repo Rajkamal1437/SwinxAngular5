@@ -22,6 +22,10 @@ import { UserComponent } from '../../user/user.component';
 import { CreatetemplateComponent } from '../../createtemplate/createtemplate.component';
 import { InvoicedetailComponent } from '../../invoicedetail/invoicedetail.component';
 import { invoicedetailpopup } from '../../invoicedetail/invoicedetail.component';
+import { ProjectListComponent } from '../../project-list/project-list.component';
+import { CostcenterListComponent } from '../../costcenter-list/costcenter-list.component';
+import { AccountListComponent } from '../../account-list/account-list.component';
+
 import {
   MatAutocompleteModule,
    MatButtonModule,
@@ -117,7 +121,10 @@ import {
     UserComponent,
     CreatetemplateComponent,
     InvoicedetailComponent,
-    invoicedetailpopup
+    invoicedetailpopup,
+    ProjectListComponent,
+    CostcenterListComponent,
+    AccountListComponent,
   ]
 })
 

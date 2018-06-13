@@ -30,6 +30,9 @@ import { CompanyComponent } from './company/company.component';
 import { UserComponent } from './user/user.component';
 import { CreatetemplateComponent } from './createtemplate/createtemplate.component';
 import { InvoicedetailComponent } from './invoicedetail/invoicedetail.component';
+import { ProjectListComponent } from './project-list/project-list.component';
+import { CostcenterListComponent } from './costcenter-list/costcenter-list.component';
+import { AccountListComponent } from './account-list/account-list.component';
 
 @NgModule({
   imports: [

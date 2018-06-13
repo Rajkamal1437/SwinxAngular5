@@ -1,0 +1,180 @@
+<style>
+
+.table {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0.5rem;
+  line-height: 1.5;
+  border-bottom: 1px solid #d0d0d0;
+  flex: 1 1 auto;
+}
+
+.th {
+  display: flex;
+  width: 100%;
+  font-weight: 500;
+  background-color: #f2f2f2;
+
+}
+
+.th > .td {
+  white-space: normal;
+  justify-content: center;
+}
+
+.tr {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+// .tr:nth-of-type(even) {
+//   background-color: #f2f2f2;
+// }
+//
+// .tr:nth-of-type(odd) {
+//   background-color: #ffffff;
+// }
+
+.td {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 1em;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0px;
+  white-space: nowrap;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.th[_ngcontent-c5] {
+    display: flex;
+    width: 100%;
+    font-weight: 300;
+    background-color: #f2f2f2;
+}
+
+.td[_ngcontent-c5] {
+  padding: 1em;
+}
+
+
+.table[_ngcontent-c5]{
+  font-size: 13px !important;
+  border: 1px solid #efefefed;
+}
+</style>
+<div class="popupdiv">
+ <h1 mat-dialog-title> Merge </h1>
+<div class="row">
+  <div class="col-md-2 col-sm-2 col-xs-2 col-lg-2">
+    <mat-checkbox class="example-margin" color="primary" style="margin-left:10px;">Invoice date</mat-checkbox>
+</div>
+  <div class="col-md-5 col-sm-5 col-xs-5 col-lg-5">
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker5" placeholder="Invoice From date ">
+      <mat-datepicker-toggle matSuffix [for]="picker5"></mat-datepicker-toggle>
+      <mat-datepicker #picker5></mat-datepicker>
+    </mat-form-field>
+  </div>
+  <div class="col-md-5 col-sm-5 col-xs-5 col-lg-5">
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker6" placeholder="Invoice to date ">
+      <mat-datepicker #picker6></mat-datepicker>
+      <mat-datepicker-toggle matSuffix [for]="picker6"></mat-datepicker-toggle>
+    </mat-form-field>
+  </div>
+  <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1">
+
+  </div>
+  <div class="col-md-10 col-sm-10 col-xs-10 col-lg-10">
+    Period :
+    <mat-radio-group style="align-content:center;">
+      <mat-radio-button color="primary" value="1" style="margin-left:15px;">This Month</mat-radio-button>
+      <mat-radio-button color="primary" value="2" style="margin-left:15px;">Last 3 Months</mat-radio-button>
+      <mat-radio-button color="primary" value="3" style="margin-left:15px;">Last 6 Months</mat-radio-button>
+      <mat-radio-button color="primary" value="4" style="margin-left:15px;">Last 12 Months</mat-radio-button>
+    </mat-radio-group>
+  </div>
+  <div class="col-md-1 col-sm-1 col-xs-1 col-lg-1">
+
+  </div>
+</div>
+<div mat-dialog-actions style="float:right;">
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="data.CertifierName" cdkFocusInitial>OK</button>
+</div>
+<br>
+<br>
+<br>
+<h3 mat-dialog-title>  The documents below are available for 24h </h3>
+
+<div class="table" style="font-size: 14px !important;">
+  <div class="tr th" style="color:#fff; background-color:#2e348a;">
+    <div class="td">
+      Report ID
+    </div>
+    <div class="td" style="flex-grow: 2;">
+      File Name
+    </div>
+    <div class="td">
+      Created Date Time
+    </div>
+    <div class="td">
+      Download
+    </div>
+  </div>
+
+  <div class="tr">
+    <div class="td" style="justify-content: center;">
+      <span>1002</span>
+    </div>
+    <div class="td" style="flex-grow: 2; justify-content: flex-start;">
+      <span>SHIELD REPORT 18-R</span>
+    </div>
+    <div class="td" style="justify-content: center;">
+      <span>2018/07/12 19:44:10</span>
+    </div>
+    <div class="td" style="justify-content: center;">
+      <button mat-mini-fab color="primary"><i class="material-icons"  matTooltip="Download">arrow_downward</i></button>
+    </div>
+  </div>
+
+  <div class="tr">
+    <div class="td" style="justify-content: center;">
+      <span>1056</span>
+    </div>
+    <div class="td" style="flex-grow: 2; justify-content: flex-start;">
+      <span>PER INVOICE TEST</span>
+    </div>
+    <div class="td" style="justify-content: center;">
+      <span>2018/06/27 07:27:19</span>
+    </div>
+    <div class="td" style="justify-content: center;">
+      <button mat-mini-fab color="primary"><i class="material-icons"  matTooltip="Download">arrow_downward</i></button>
+    </div>
+  </div>
+
+  <div class="tr">
+    <div class="td" style="justify-content: center;">
+      <span>1123</span>
+    </div>
+    <div class="td" style="flex-grow: 2; justify-content: flex-start;">
+      <span>OFS REPORT NEW PHASE EXPENSES</span>
+    </div>
+    <div class="td" style="justify-content: center;">
+      <span>2018/12/08 08:23:45</span>
+    </div>
+    <div class="td" style="justify-content: center;">
+      <button mat-mini-fab color="primary"><i class="material-icons"  matTooltip="Download">arrow_downward</i></button>
+    </div>
+  </div>
+
+</div>
+<div mat-dialog-actions style="float:right;">
+  <button mat-button style="color:#fff; background:#2e348a;" (click)="onNoClick()">Cancel</button>
+</div>
+</div>
