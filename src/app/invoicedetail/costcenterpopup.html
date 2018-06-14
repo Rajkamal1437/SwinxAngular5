@@ -1,0 +1,66 @@
+
+<div class="popupdiv">
+ <h1 mat-dialog-title>  COST CENTER </h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <input matInput value="OFS TECH">
+  </mat-form-field>
+
+
+
+  <div class="table-responsive">
+      <table class="table">
+          <thead class=" text-primary" style="color: #fff !important; background-color: #2e348a;">
+             <th>
+             <mat-checkbox class="example-margin"  color="primary"  ></mat-checkbox>
+             </th>
+              <th>
+                  COSTCENTER CODE
+              </th>
+              <th>
+                  COSTCENTER NAME
+              </th>
+          </thead>
+          <tbody>
+              <tr>
+                <td>
+                <mat-checkbox class="example-margin" color="primary"  ></mat-checkbox>
+              </td>
+                  <td>
+                    SWX
+                  </td>
+                  <td>
+                    SWINX AB
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                <mat-checkbox class="example-margin" color="primary" [(ngModel)]="var_name" ></mat-checkbox>
+              </td>
+                  <td>
+                    OFS TECH
+                  </td>
+                  <td>
+                    OBJECT FRONTIER SOFTWARE
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                <mat-checkbox class="example-margin" color="primary" ></mat-checkbox>
+              </td>
+                  <td>
+                   VK
+                  </td>
+                  <td>
+                    VERIZON KNOWLADGE SOLUTIONS
+                  </td>
+              </tr>
+</tbody>
+</table>
+</div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="data.CertifierName" cdkFocusInitial>OK</button>
+</div>
+</div>

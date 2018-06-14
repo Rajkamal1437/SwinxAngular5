@@ -1,0 +1,99 @@
+
+<div class="popupdiv">
+ <h1 mat-dialog-title>  APPROVER </h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <input matInput value="CS;">
+  </mat-form-field>
+
+
+
+  <div class="table-responsive">
+      <table class="table">
+          <thead class=" text-primary" style="color: #fff !important; background-color: #2e348a;">
+             <th>
+             <mat-checkbox class="example-margin"  color="primary"  ></mat-checkbox>
+             </th>
+              <th>
+                  Approver Code
+              </th>
+              <th>
+                  Approver Name
+              </th>
+          </thead>
+          <tbody>
+              <tr>
+                <td>
+                <mat-checkbox class="example-margin" color="primary" ></mat-checkbox>
+              </td>
+                  <td>
+                    RAJ
+                  </td>
+                  <td>
+                    Rajkamal
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                <mat-checkbox class="example-margin" color="primary"></mat-checkbox>
+              </td>
+                  <td>
+                    RAM
+                  </td>
+                  <td>
+                    Ramanathan
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                <mat-checkbox class="example-margin" color="primary" ></mat-checkbox>
+              </td>
+                  <td>
+                    PER
+                  </td>
+                  <td>
+                    PER ARRONSON
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                <mat-checkbox class="example-margin" color="primary" ></mat-checkbox>
+              </td>
+                  <td>
+                    HAL
+                  </td>
+                  <td>
+                    HALLIL
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                <mat-checkbox class="example-margin" color="primary"  [(ngModel)]="var_name" ></mat-checkbox>
+              </td>
+                  <td>
+                    CS
+                  </td>
+                  <td>
+                    CERTIFIER SOURCE
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                <mat-checkbox class="example-margin" color="primary" ></mat-checkbox>
+              </td>
+                  <td>
+                   XIA
+                  </td>
+                  <td>
+                    OFS
+                  </td>
+              </tr>
+</tbody>
+</table>
+</div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="data.CertifierName" cdkFocusInitial>OK</button>
+</div>
+</div>

@@ -1,0 +1,100 @@
+
+<div class="popupdiv">
+ <h1 mat-dialog-title>  SUPPLIERS </h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <input matInput value="SWINX AB">
+  </mat-form-field>
+
+
+
+  <div class="table-responsive">
+      <table class="table">
+          <thead class=" text-primary" style="color: #fff !important; background-color: #2e348a;">
+             <th>
+             <mat-checkbox class="example-margin"  color="primary"  ></mat-checkbox>
+             </th>
+              <th>
+                  SUPPLIER CODE
+              </th>
+              <th>
+                  SUPPLIER NAME
+              </th>
+          </thead>
+          <tbody>
+              <tr>
+                <td>
+                <mat-checkbox class="example-margin" color="primary"  [(ngModel)]="var_name" ></mat-checkbox>
+              </td>
+                  <td>
+                    18
+                  </td>
+                  <td>
+                    SWINX AB
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                <mat-checkbox class="example-margin" color="primary"></mat-checkbox>
+              </td>
+                  <td>
+                    19
+                  </td>
+                  <td>
+                    OBJECT FRONTIER SOFTWARE
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                <mat-checkbox class="example-margin" color="primary"></mat-checkbox>
+              </td>
+                  <td>
+                    20
+                  </td>
+                  <td>
+                    TATA CONSULTANCY SERVICE
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                <mat-checkbox class="example-margin" color="primary" ></mat-checkbox>
+              </td>
+                  <td>
+                    34
+                  </td>
+                  <td>
+                    ANTI MONEY LAUNDRY
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                <mat-checkbox class="example-margin" color="primary"  ></mat-checkbox>
+              </td>
+                  <td>
+                    38
+                  </td>
+                  <td>
+                    ZERIOUS
+                  </td>
+              </tr>
+
+              <tr>
+                <td>
+                <mat-checkbox class="example-margin" color="primary"  ></mat-checkbox>
+              </td>
+                  <td>
+                    45
+                  </td>
+                  <td>
+                    ZOHO CORP
+                  </td>
+              </tr>
+</tbody>
+</table>
+</div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="data.CertifierName" cdkFocusInitial>OK</button>
+</div>
+</div>

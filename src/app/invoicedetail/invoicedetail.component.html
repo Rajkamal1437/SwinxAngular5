@@ -29,7 +29,7 @@
               <table class="example-full-width" cellspacing="0" class="col-md-6 col-lg-6 col-sm-12 col-xs-6">
                 <tr>
                   <td>
-                    <mat-form-field class="example-full-width">
+                    <mat-form-field class="example-full-width" (click)="opensuppliers()">
                       <input matInput placeholder="Supplier" value="18">
                     </mat-form-field>
                   </td>
@@ -49,7 +49,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <mat-form-field class="example-full-width">
+                    <mat-form-field class="example-full-width"  (click)="opensuppliers()">
                       <input matInput placeholder="Supplier Name " value="SWINX AB">
                     </mat-form-field>
                   </td>
@@ -73,12 +73,12 @@
                     </mat-form-field>
                   </td>
                   <td>
-                    <mat-form-field class="example-full-width">
+                    <mat-form-field class="example-full-width"  (click)="openprojects()">
                       <input matInput placeholder="project" value="SWINX AB">
                     </mat-form-field>
                   </td>
                   <td>
-                    <mat-form-field class="example-full-width">
+                    <mat-form-field class="example-full-width" (click)="opencostcenter()">
                       <input matInput placeholder="Cost Center" value="OFS TECH">
                     </mat-form-field>
                   </td>
@@ -92,7 +92,7 @@
                     </mat-form-field>
                   </td>
                   <td>
-                    <mat-form-field class="example-full-width">
+                    <mat-form-field class="example-full-width" (click)="openapprovers()">
                       <input matInput placeholder="Approver" value="CS;">
                     </mat-form-field>
                   </td>
@@ -227,7 +227,7 @@
     </div>
 
     <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12" style="background:#fff;">
-      <img src="/assets/img/invoice1.jpg" width="350px" style="border: 1px solid; margin: 50px 50px 10px 50px;" />
+      <img src="/assets/img/invoice.jpg" width="350px" style="border: 1px solid; margin: 50px 50px 10px 50px;" />
       <mat-button-toggle-group #group="matButtonToggleGroup" class="example-selected-value">
         <mat-button-toggle value="left">
           <mat-icon>navigate_before</mat-icon>

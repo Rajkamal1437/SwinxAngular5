@@ -10,41 +10,41 @@
     <div  class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
   <table class="example-full-width" cellspacing="0" class="col-md-6 col-lg-6 col-sm-12 col-xs-6"><tr>
     <td><mat-form-field class="example-full-width" >
-      <input matInput placeholder="Type" value="Debit Invoice">
+      <input matInput placeholder="Type" value="Debit Invoice" style="color:  #3C4858;" disabled>
     </mat-form-field></td>
     <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="Serial No" value="15345">
+      <input matInput placeholder="Serial No" value="15345" style="color:  #3C4858;" disabled>
     </mat-form-field></td>
     <td><mat-form-field class="example-full-width">
-      <input matInput #postalCode maxlength="5" placeholder="Status" value="Registrerad">
+      <input matInput #postalCode maxlength="5" placeholder="Status" value="Registrerad" style="color:  #3C4858;" disabled>
   </mat-form-field></td>
 
   </tr>
   <tr>
     <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="Supplier" value="18">
+      <input matInput placeholder="Supplier" value="18" style="color:  #3C4858;" disabled>
     </mat-form-field></td>
     <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="Supplier Name" value="Swinx AB">
+      <input matInput placeholder="Supplier Name" value="Swinx AB" style="color:  #3C4858;" disabled>
     </mat-form-field></td>
     <td><mat-form-field class="example-full-width">
-      <input matInput #postalCode maxlength="5" placeholder="invoice Amount(SEK)" value="5,000.00">
+      <input matInput #postalCode maxlength="5" placeholder="invoice Amount(SEK)" value="5,000.00" style="color:  #3C4858;" disabled>
     </mat-form-field></td>
 
   </tr>
   <tr>
     <td>
     <mat-form-field>
-      <input matInput [matDatepicker]="picker" placeholder="Invoice due date " [value]="date.value">
+      <input matInput [matDatepicker]="picker" placeholder="Invoice due date " [value]="date.value" style="color:  #3C4858;" disabled>
       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
   </td>
     <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="Approver" value="CS;PER;ANRO;" >
+      <input matInput placeholder="Approver" value="CS;PER;ANRO;" style="color:  #3C4858;" disabled>
     </mat-form-field></td>
     <td><mat-form-field class="example-full-width">
-      <input matInput #postalCode maxlength="5" placeholder="Certifier" value="SA;RAJ;" >
+      <input matInput #postalCode maxlength="5" placeholder="Certifier" value="SA;RAJ;" style="color:  #3C4858;" disabled>
       <!-- <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint> -->
     </mat-form-field></td>
 

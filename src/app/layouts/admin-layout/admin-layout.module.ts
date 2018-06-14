@@ -22,6 +22,10 @@ import { UserComponent } from '../../user/user.component';
 import { CreatetemplateComponent } from '../../createtemplate/createtemplate.component';
 import { InvoicedetailComponent } from '../../invoicedetail/invoicedetail.component';
 import { invoicedetailpopup } from '../../invoicedetail/invoicedetail.component';
+import { approverspopup } from '../../invoicedetail/invoicedetail.component';
+import { projectspopup } from '../../invoicedetail/invoicedetail.component';
+import { costcenterpopup } from '../../invoicedetail/invoicedetail.component';
+import { supplierspopup } from '../../invoicedetail/invoicedetail.component';
 import { ProjectListComponent } from '../../project-list/project-list.component';
 import { CostcenterListComponent } from '../../costcenter-list/costcenter-list.component';
 import { AccountListComponent } from '../../account-list/account-list.component';
@@ -102,7 +106,7 @@ import {
      MatToolbarModule,
      MatTooltipModule,
   ],
-    entryComponents: [invoicedetailpopup],
+    entryComponents: [invoicedetailpopup , approverspopup , projectspopup , costcenterpopup , supplierspopup],
   declarations: [
     SuppliersListComponent,
     ToApproveComponent,
@@ -125,6 +129,10 @@ import {
     ProjectListComponent,
     CostcenterListComponent,
     AccountListComponent,
+    approverspopup,
+    projectspopup,
+    costcenterpopup,
+    supplierspopup
   ]
 })
 
